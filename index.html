@@ -33,6 +33,11 @@
             font-size: 16px;
             font-weight: bold;
         }
+        .image-stack {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            position: relative;
+        }
     </style>
 </head>
 <body>
@@ -41,7 +46,14 @@
     </div>
     <div class="row">
         <div class="column">
-            <img src="images/JetsonNano.jpg" alt="Jetson Nano" width="540" height="450">
+            <div class="image-stack">
+                <div class="image-stack__item image-stack__item--top">
+                    <img src="images/JetsonNano.jpg" alt="Jetson Nano" width="540" height="450">
+                </div>
+                <div class="image-stack__item image-stack__item--bottom">
+                    <img src="images/jetbot.jpg" alt="JetBot" width="160" height="225">
+                </div>
+            </div>
         </div>
         <div class="column">
             <table>

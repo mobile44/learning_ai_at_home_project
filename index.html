@@ -41,6 +41,20 @@
             font-weight: bold;
             text-align: center;
         }
+        .rtbar p {
+            background-color: rgb(96, 30, 135);
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .tfbar p {
+            background-color: rgb(12, 116, 185);
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
         .row {
             display: flex;
         }
@@ -352,27 +366,23 @@
             </table>
         </div>
     </div>
-    <div class="ptbar">
+    <div class="rtbar">
         <p>Machine Learning - TensorRT 01 Prediction with pre-trained ResNet model</p>
     </div>
     <div class="row">
         <div class="column">
-            <img src="images/pt05.jpg" alt="PyTorch05" width="440" height="263">
+            <img src="images/rt01.jpg" alt="TensorRT01" width="484" height="404">
         </div>
         <div class="column">
             <table>
                 <tr><th colspan=2>Key Items</th></tr>
-                <tr><td>05</td><td>torch</td></tr>
-                <tr><td>06</td><td>numpy</td></tr>
-                <tr><td>05</td><td>torchvision</td></tr>
+                <tr><td>05</td><td>Jetson</td></tr>
+                <tr><td>06</td><td>PIL</td></tr>
                 <tr><td>01</td><td>matplotlib</td></tr>
-                <tr><td>02</td><td>time</td></tr>
-                <tr><td>03</td><td>os</td></tr>
-                <tr><td>04</td><td>copy</td></tr>
                 <tr>
                     <td>-</td>
                     <td>
-                        <p>This exercise is an extension of training of last PyTorch exercise. It is using ImageNet dataset to train with ResNet the pre-trained model weights. The epoch is 25 and tune the learning rate in every 7 epoch. Finally you can find a high accuracy rate at the end of this training.</p>
+                        <p>This exercise is using jetson library which has been built in with TensorRT. TensorRT is an accelerator of CNN model from TensorFlow or PyTorch. We just use it and can detect objects in image. In this exercise we use python to compose a program with loading ResNet for prediction purpose.</p>
                     </td>
                 </tr>
             </table>

@@ -89,7 +89,7 @@
         <p class="content">I am interested in technology. However there is no such good place to learn deep learning nearby especially for kids. I have tried differenct ways such as doing it in laptop; colab; and jetson nano etc. They all can allow me doing a certain level of GPU training. However, I find that it is hard to using all different frameworks working together such as Tensorflow; Pytorch; TensorRT and networks such as yolov; resnet and mobilenet in one single platform. In order to make it convenient; portable and simple for kids. I make up this project. After development of single platform, I hope to create an innovative way of picking up knowledge with fun activities for kids</p>
         <p class="content">Learning codes, I believe that line by line is the easiest way for kids and Jupyter notebook is the best choice as it can allow you to visualize the result of running codes by line or bunch of lines. Although GPU is preferred, we don't need much as we could use light network or smaller image size to finish one training within the time those kids can stand for. For the cost of hardware, a laptop with GPU of entry level should be US$800 around. However, laptop should be for general multiple purposes and it is hard for kids using purely Linux environment. Colab is very helpful but it is not for TensorRT. Put all together, I choose Jetson nano. First, its cost in $US100 should be affordable for parents or school to invest. It doesn't have hard drive but a micro SD. Since we only need an environment of learning instead of data storage, micro SD is preferrable and it is easy to manage. By default, Jetbot kit comes with few training chapters for learner to warm up. Jetbot can act as robot with motors; cameras and other I2C componeents. Further Jetson nano can be offline to practice if necessary data has prepared. Therefore I don't see others to beat it.</p>
         <p>If you are planning to let your children or students to learn with Jetbot while you want to use it as a single platform for different AI Experiement Exercises, you can contact me via email. You can make you own choice of picking up the online supplier for Jetson Nano or Jetbot, my service is to help you configuring the environment based on the standard Jetson Nano package (JetPack 4.4.1). Also, I will keep on to consolidate the online exercises and hack it to adapt to this environment if necessary. For knolwedge detail, I include original URL at the top of each exercise and you can contact the arthur for your further interest. For the Jetbot, you can refer to the one as in the photo.</p>
-        <p>Here I want to say thank you to those who originally publish the exercises which are very helpful for me and they should benefit more learners in future.</p>
+        <p>Here I want to say thank you to those guys who originally publish the exercises which are very helpful for me. I hope to make it further to benefit more learners in future especially for kids.</p>
         <p class="icon"><img src="images/contact.jpg" alt="MyIcon" width="486" height="59"/></p>
     </div>
     <div class="row">
@@ -418,11 +418,11 @@
         </div>
     </div>
     <div class="tfbar">
-        <p>Machine Learning - TensorFlow 02 Prediction with pre-trained ResNet model</p>
+        <p>Machine Learning - TensorFlow 02 Train & Prediction with ResNet</p>
     </div>
     <div class="row">
         <div class="column">
-            <img src="images/duckies_test.gif" alt="TensorFlow02" width="242" height="202">
+            <img src="images/duckies_test.gif" alt="TensorFlow02" width="484" height="404">
         </div>
         <div class="column">
             <table>
@@ -444,7 +444,7 @@
                 <tr>
                     <td>-</td>
                     <td>
-                        <p>This exercise is using jetson library which has been built in with TensorRT. TensorRT is an accelerator of CNN model from TensorFlow or PyTorch. We just use it and can detect objects in image. In this exercise we use python to compose a program with loading ResNet for prediction purpose.</p>
+                        <p>This exercise shows to train object with annotation. Some parts are similar to last exercise. The customized dataset is a rubber duck. Images are annotated with a bounding box and the class and they are loaded into numpy variable. Since here is not colab, annotation have been prepared. Then there is process to make all in tensor. In order to ensure the dateset is in right place, images with annotation and bounding box are displayed. Pre-trained model ResNet and checkpoints are downloaded beforehand. Hence it is just to load and configured the model builder. AFter that, it is to train with 100 batches. The last is to preidct the test images. Since the images are split from one shot of video, we will use gif creator to group all as a video effect.</p>
                     </td>
                 </tr>
             </table>
